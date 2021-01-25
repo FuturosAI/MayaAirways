@@ -1,0 +1,30 @@
+{
+  "name": "netlify-fauna",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@analytics/google-analytics": "^0.3.1",
+    "analytics": "^0.3.5",
+    "faunadb": "^2.14.2",
+    "markdown-magic": "^1.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1"
+  },
+  "scripts": {
+    "bootstrap": "netlify dev:exec node ./scripts/bootstrap-fauna-database.js",
+    "docs": "md-magic --path '**/*.md' --ignore 'node_modules'",
+    "start": "netlify dev",
+    "prebuild": "echo 'setup faunaDB' && npm run bootstrap",
+    "build": "react-scripts build"
+  },
+  "devDependencies": {
+    "netlify-cli": "^2.19.0"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
