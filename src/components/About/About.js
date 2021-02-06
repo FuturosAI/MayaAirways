@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Grid, Header, Image, List } from 'semantic-ui-react'
+import { Card, Grid, Header, Image, List } from 'semantic-ui-react'
 import api from '../../utils/api'
 
 const About = (props) => {
@@ -29,8 +29,8 @@ const About = (props) => {
         <div>
             <Grid>
                 <Grid.Row centered>
-                    <Grid.Column centered width={9}>
-                    <Image src='./images/bogota.jpg' />
+                    <Grid.Column centered width={16}>
+                    <Image src='./images/bogota.jpg' fluid />
                     </Grid.Column>
                 </Grid.Row>
                 <Grid.Row centered>
@@ -75,10 +75,16 @@ const About = (props) => {
                     <Grid centered>
                         <Grid.Row >
                         {profiles.map(profile=>(
-                            <Grid.Column width={5}>
-                                {profile.name}
-                                <Image src={"/images/"+profile.image} size="large"/>
-                                <p>{profile.description}</p>
+                            <Grid.Column width={4}>
+                                <Card fluid>
+                                <Image  src={"/images/"+profile.image} circular/>
+                                <Card.Content>
+                                    <Card.Header>
+                                        {profile.name}
+                                    </Card.Header>
+                                <Card.Description>{profile.description}</Card.Description>
+                                </Card.Content>
+                                </Card>
                             </Grid.Column>
                         ))}
                         </Grid.Row>
