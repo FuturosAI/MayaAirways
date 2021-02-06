@@ -1,7 +1,7 @@
 /* Api methods to call /functions */
 
-const create = (data) => {
-  return fetch('/.netlify/functions/todos-create', {
+const createMember = (data) => {
+  return fetch('/.netlify/functions/members-create', {
     body: JSON.stringify(data),
     method: 'POST'
   }).then(response => {
@@ -11,6 +11,12 @@ const create = (data) => {
 
 const readAll = () => {
   return fetch('/.netlify/functions/todos-read-all').then((response) => {
+    return response.json()
+  })
+}
+
+const readAllMembers = () => {
+  return fetch('/.netlify/functions/todos-read-all-members').then((response) => {
     return response.json()
   })
 }
@@ -44,8 +50,9 @@ const batchDeleteTodo = (todoIds) => {
 }
 
 export default {
-  create: create,
+  createMember: createMember,
   readAll: readAll,
+  readAllMembers:readAllMembers,
   update: update,
   delete: deleteTodo,
   batchDelete: batchDeleteTodo
