@@ -30,7 +30,7 @@ const About = (props) => {
             <Grid>
                 <Grid.Row centered>
                     <Grid.Column centered width={9}>
-                    <Image src='./images/eje.jpg' />
+                    <Image src='./images/bogota.jpg' />
                     </Grid.Column>
                 </Grid.Row>
                 <Grid.Row centered>

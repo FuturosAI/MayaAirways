@@ -16,7 +16,7 @@ const Home = (props) => {
                         <br />
                     </Grid.Column>
                     <Grid.Column width={9}>
-                        <Image src={"./images/bogota.jpg"} />
+                        <Image src={"./images/eje.jpg"} />
                     </Grid.Column>
                 </Grid.Row>
                 <Grid.Row verticalAlign="middle" centered>

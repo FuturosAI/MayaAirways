@@ -9,7 +9,7 @@ const AppHeader = (props) => {
           <div className='app-left-nav'>
             <Menu stackable secondary>
               <Menu.Item>
-                <Image src={'/images/logoblanco.png'} size="medium" className='app-logo' alt='logo' />
+                <Link to="/"><Image src={'/images/logoblanco.png'} size="medium" className='app-logo' alt='logo' /></Link>
               </Menu.Item>
               <Menu.Item>
                 <Link to="/">Pagina principal</Link>
