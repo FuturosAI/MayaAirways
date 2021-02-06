@@ -12,16 +12,16 @@ const AppHeader = (props) => {
                 <Image src={'/images/logoblanco.png'} size="medium" className='app-logo' alt='logo' />
               </Menu.Item>
               <Menu.Item>
-                <Link to="/">Home</Link>
+                <Link to="/">Pagina principal</Link>
               </Menu.Item>
               <Menu.Item>
-                <Link to="/about">About</Link>
+                <Link to="/about">¿Quies somos?</Link>
               </Menu.Item>
               <Menu.Item>
-                <Link to="/projects">Projects</Link>
+                <Link to="/projects">Proyectos</Link>
               </Menu.Item>
               <Menu.Item>
-                <Link to="/conctact">Contact us</Link>
+                <Link to="/conctact">Contacto</Link>
               </Menu.Item>
             </Menu>
           </div>
