@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Grid, Header, Image, Form } from 'semantic-ui-react'
+import { Grid, Header, Image } from 'semantic-ui-react'
 import Contact from '../Contact/Contact'
 import './Home.css'
 const Home = (props) => {
