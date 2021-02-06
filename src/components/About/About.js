@@ -29,7 +29,9 @@ const About = (props) => {
         <div>
             <Grid>
                 <Grid.Row centered>
-                    <Image src='https://react.semantic-ui.com/images/wireframe/image.png' size="large" />
+                    <Grid.Column centered width={9}>
+                    <Image src='./images/eje.jpg' />
+                    </Grid.Column>
                 </Grid.Row>
                 <Grid.Row centered>
                     <Grid.Column textAlign="justified" width={9}>
