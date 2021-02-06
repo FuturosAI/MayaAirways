@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import { Card, Grid, Header, Image, List } from 'semantic-ui-react'
+import { Card, Container, Grid, Header, Image, List } from 'semantic-ui-react'
 import api from '../../utils/api'
 
+import './Home.css'
 const About = (props) => {
     const [profiles, setProfiles] = useState([])
     useEffect(() => {
@@ -26,7 +27,7 @@ const About = (props) => {
       }, [])
     //    saveToApi("POST","")
     return (
-        <div>
+        <div >
             <Grid>
                 <Grid.Row centered>
                     <Grid.Column centered width={16}>
@@ -37,14 +38,14 @@ const About = (props) => {
                     <Grid.Column textAlign="justified" width={9}>
                         <Grid>
                         <Grid.Row >
-                        <Header>
+                        <Header as="h1">
                             Misión
                          </Header>
-                        <p>
+                         </Grid.Row>
+                         <Grid.Row>
+                        <Container fluid className="app-body">
                         Somos una organización sin ánimo de lucro que trabaja con agentes del estado, el sector privado, organismos internacionales organizaciones no gubernamentales, la academia y la sociedad civil en proyectos de movilidad sostenible en cinco dimensiones: eficiencia, seguridad vial, protección del medio ambiente, inclusión social y salud pública. 
-                        </p>
-                        </Grid.Row>
-                        <Grid.Row >
+                        <br/>
                         <List bulleted>
                             <List.Item>
                                 Eficiencia: reducir de costos y tiempos de viaje de personas y productos y los costos de inversión, operación y mantenimiento para el estado
@@ -62,15 +63,15 @@ const About = (props) => {
                                 Salud pública: fomentar la actividad física y la salud mental de las personas en el marco de la movilidad
                             </List.Item>
                         </List>
+                        </Container>
                         </Grid.Row>
-                        
                         </Grid>
                     </Grid.Column>
                 </Grid.Row>
                 <Grid.Row>
                     <Grid.Column textAlign="center" >
                         <Header>
-                        Team
+                        Equipo
                         </Header>
                     <Grid centered>
                         <Grid.Row >

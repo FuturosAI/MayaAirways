@@ -7,7 +7,7 @@ const Home = (props) => {
         <div className="app-body">
             <Grid divided='vertically'>
                 <Grid.Row>
-                    <Grid.Column computer={9} mobile={16}>
+                    <Grid.Column computer={9} mobile={16} verticalAlign={'middle'}>
                         <br />
                         <br />
                         <Header className="largeText" >

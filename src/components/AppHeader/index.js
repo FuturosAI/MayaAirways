@@ -11,20 +11,12 @@ const AppHeader = (props) => {
           <div className='app-left-nav'>
             <Menu stackable secondary>
               <Menu.Item>
-                <Link to="/"><Image src={'/images/logonegro.png'} size="medium" className='app-logo' alt='logo' /></Link>
+                <Link to="/" ><Image src={'/images/logonegro.png'} size="medium" className='app-logo' alt='logo' /></Link>
               </Menu.Item>
-              <Menu.Item>
-                <Link to="/">Pagina principal</Link>
-              </Menu.Item>
-              <Menu.Item>
-                <Link to="/about">¿Quies somos?</Link>
-              </Menu.Item>
-              <Menu.Item>
-                <Link to="/projects">Proyectos</Link>
-              </Menu.Item>
-              <Menu.Item>
-                <Link to="/conctact">Contacto</Link>
-              </Menu.Item>
+              <Menu.Item as={Link} name={'Pagina principal'} to='/' style={{color:'#ffff'}}/>
+              <Menu.Item as={Link} name={'¿Quienes somos?'} to='/about' style={{color:'#ffff'}}/>
+              <Menu.Item as={Link} name={'Proyectos'} to='/projects' style={{color:'#ffff'}}/>
+              <Menu.Item as={Link} name={'Contacto'} to='/conctact' style={{color:'#ffff'}}/>
             </Menu>
           </div>
         </div>
