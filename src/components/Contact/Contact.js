@@ -6,7 +6,7 @@ const Contact = (props) => {
         <div>
             <Grid>
                 <Grid.Row centered>
-                    <Grid.Column width={6}>
+                    <Grid.Column computer={6}mobile={6}>
                         <Header>
                             Habla con nosotros
                         </Header>
@@ -14,7 +14,7 @@ const Contact = (props) => {
                             Ponte en contacto con nuestro equipo. Solo se utilizara la información proporcionada para responder a los mensajes enviados.
                         </p>
                     </Grid.Column>
-                    <Grid.Column width={9}>
+                    <Grid.Column computer={9} mobile={6}>
                         <Form>
                             <Form.Group widths='equal'>
                                 <Form.Input fluid label='Email Address' placeholder='Email Address' />

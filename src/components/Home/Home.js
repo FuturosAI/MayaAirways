@@ -4,10 +4,10 @@ import Contact from '../Contact/Contact'
 import './Home.css'
 const Home = (props) => {
     return (
-        <div className="App">
+        <div className="app-body">
             <Grid divided='vertically'>
                 <Grid.Row>
-                    <Grid.Column width={9}>
+                    <Grid.Column computer={9} mobile={16}>
                         <br />
                         <br />
                         <Header className="largeText" >
@@ -15,15 +15,15 @@ const Home = (props) => {
                         </Header>
                         <br />
                     </Grid.Column>
-                    <Grid.Column width={7}>
+                    <Grid.Column computer={7} mobile={16}>
                         <Image src={"./images/ejecuadrado.jpg"} circular />
                     </Grid.Column>
                 </Grid.Row>
                 <Grid.Row verticalAlign="middle" centered>
-                    <Grid.Column width={6}>
+                    <Grid.Column mobile={16} computer={6}>
                         <Image src='./images/cicloviacuadrada.jpg'  circular size="large" />
                     </Grid.Column>
-                    <Grid.Column width={6}>
+                    <Grid.Column mobile={16} computer={6}>
                         <Header as="h2">
                             Nuestro trabajo
                         </Header>

@@ -8,6 +8,7 @@ import {Grid } from 'semantic-ui-react'
 import './App.css'
 import Projects from './components/Projects/Projects'
 import Contact from './components/Contact/Contact'
+import AppFooter from './components/AppFooter'
 // import AppFooter from './components/AppFooter'
 
 export default class App extends Component {
@@ -36,13 +37,7 @@ export default class App extends Component {
             </Route>
           </Switch>
           {/* Branding / credits. Leave this at the bottom! */}
-        <Grid>
-          <Grid.Row columns={1}>
-            <Grid.Column>
-              {/* <AppFooter /> */}
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
+              <AppFooter />
         </div>
       </Router>
     )

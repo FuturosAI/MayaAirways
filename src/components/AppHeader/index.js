@@ -1,6 +1,8 @@
 import React from 'react'
 import { Menu ,Image} from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
+
+import './AppHeader.css'
 const AppHeader = (props) => {
   return (
     <header className='app-header'>
@@ -9,7 +11,7 @@ const AppHeader = (props) => {
           <div className='app-left-nav'>
             <Menu stackable secondary>
               <Menu.Item>
-                <Link to="/"><Image src={'/images/logoblanco.png'} size="medium" className='app-logo' alt='logo' /></Link>
+                <Link to="/"><Image src={'/images/logonegro.png'} size="medium" className='app-logo' alt='logo' /></Link>
               </Menu.Item>
               <Menu.Item>
                 <Link to="/">Pagina principal</Link>

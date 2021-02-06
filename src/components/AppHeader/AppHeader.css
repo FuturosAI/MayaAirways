@@ -11,8 +11,7 @@
   flex-grow: 1;
 }
 .app-header {
-  background-color: #222;
-  height: 105px;
+  background-color: #1a1a1a;
   padding: 20px;
   color: white;
   padding-left: 60px;

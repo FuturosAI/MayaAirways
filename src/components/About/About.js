@@ -75,7 +75,7 @@ const About = (props) => {
                     <Grid centered>
                         <Grid.Row >
                         {profiles.map(profile=>(
-                            <Grid.Column width={4}>
+                            <Grid.Column mobile={16}tablet={8}computer={4}>
                                 <Card fluid>
                                 <Image  src={"/images/"+profile.image} circular/>
                                 <Card.Content>
