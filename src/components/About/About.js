@@ -39,13 +39,16 @@ const About = (props) => {
                         <Grid>
                         <Grid.Row >
                         <Header as="h1">
-                            Misión
+                            Propósito Superior
                          </Header>
                          </Grid.Row>
                          <Grid.Row>
                         <Container fluid className="app-body">
                         Somos una organización sin ánimo de lucro que trabaja con agentes del estado, el sector privado, organismos internacionales organizaciones no gubernamentales, la academia y la sociedad civil en proyectos de movilidad sostenible en cinco dimensiones: eficiencia, seguridad vial, protección del medio ambiente, inclusión social y salud pública. 
                         <br/>
+                        <Header as="h2">
+                            Valores
+                        </Header>
                         <List bulleted>
                             <List.Item>
                                 Eficiencia: reducir de costos y tiempos de viaje de personas y productos y los costos de inversión, operación y mantenimiento para el estado
@@ -70,8 +73,8 @@ const About = (props) => {
                 </Grid.Row>
                 <Grid.Row>
                     <Grid.Column textAlign="center" >
-                        <Header>
-                        Equipo
+                        <Header as="h1">
+                        Equipo Lider
                         </Header>
                     <Grid centered>
                         <Grid.Row >
