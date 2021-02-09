@@ -29,15 +29,15 @@ const Home = (props) => {
                         </Header>
                         <p>Entendemos la movilidad sostenible como una combinación de acciones para evitar desplazamientos largos e innecesarios, cambiar las tendencias para promover más viajes a pie, en bicicleta y en transporte público, y mejorar las tecnologías y las operaciones de transporte. </p>
                         <p>En ese marco realizamos actividades de:  </p>
-                        <List bulleted>
-                            <List.Item>	Asistencia técnica</List.Item>
-                            <List.Item>	Investigación</List.Item>
-                            <List.Item>	Desarrollo de proyectos</List.Item>
-                            <List.Item>	Divulgación y promoción </List.Item>
-                            <List.Item>	Construcción de capacidades, capacitación </List.Item>
-                            <List.Item>	Gestión y acompañamiento</List.Item>
-                            <List.Item>	Estimación de impactos y medición de resultados</List.Item>
-                            <List.Item>	Abogacía e incidencia en políticas públicas, entre otros.</List.Item>
+                        <List >
+                            <List.Item><List.Icon name="address card"/><List.Content>Asistencia técnica</List.Content></List.Item>
+                            <List.Item><List.Icon name="address card outline"/><List.Content>Investigación</List.Content></List.Item>
+                            <List.Item><List.Icon name="compose"/><List.Content>Desarrollo de proyectos</List.Content></List.Item>
+                            <List.Item><List.Icon name="wordpress forms"/><List.Content>Divulgación y promoción </List.Content></List.Item>
+                            <List.Item><List.Icon name="student"/><List.Content>Construcción de capacidades, capacitación</List.Content> </List.Item>
+                            <List.Item><List.Icon name="signup"/><List.Content>Gestión y acompañamiento</List.Content></List.Item>
+                            <List.Item><List.Icon name="sort alphabet ascending"/><List.Content>Estimación de impactos y medición de resultados</List.Content></List.Item>
+                            <List.Item><List.Icon name="shuffle"/><List.Content>Abogacía e incidencia en políticas públicas, entre otros.</List.Content></List.Item>
                         </List>
                     </Grid.Column>
                 </Grid.Row>
