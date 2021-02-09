@@ -29,11 +29,7 @@ const About = (props) => {
     return (
         <div >
             <Grid>
-                <Grid.Row centered>
-                    <Grid.Column centered width={16}>
-                    <Image src='./images/bogota.jpg' fluid />
-                    </Grid.Column>
-                </Grid.Row>
+                <Grid.Row/>
                 <Grid.Row centered>
                     <Grid.Column textAlign="justified" width={9}>
                         <Grid>
@@ -66,6 +62,11 @@ const About = (props) => {
                         </Container>
                         </Grid.Row>
                         </Grid>
+                    </Grid.Column>
+                </Grid.Row>
+                <Grid.Row centered>
+                    <Grid.Column centered width={16}>
+                    <Image src='./images/bogota.jpg' fluid />
                     </Grid.Column>
                 </Grid.Row>
                 <Grid.Row>

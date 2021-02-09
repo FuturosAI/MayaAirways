@@ -10,10 +10,6 @@ import Contact from './components/Contact/Contact'
 // import AppFooter from './components/AppFooter'
 
 export default class App extends Component {
-  state = {
-    todos: [],
-    showMenu: false
-  }
   render() {
     return (
       <Router>
