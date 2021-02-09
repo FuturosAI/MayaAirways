@@ -1,10 +1,16 @@
 import React, { useState, useEffect } from 'react'
-import { Card, Container, Grid, Header, Image, List } from 'semantic-ui-react'
+import { Button, Card, Container, Grid, Header, Image, List, Modal } from 'semantic-ui-react'
 import api from '../../utils/api'
 
 import './Home.css'
 const About = (props) => {
     const [profiles, setProfiles] = useState([])
+    const [open, setOpen]= useState(false)
+    const [open1, setOpen1]= useState(false)
+    const [open2, setOpen2]= useState(false)
+    const [open3, setOpen3]= useState(false)
+    const [open4, setOpen4]= useState(false)
+    const [open5, setOpen5]= useState(false)
     useEffect(() => {
         async function fetchTeam () {
     
@@ -35,7 +41,7 @@ const About = (props) => {
                         <Grid>
                         <Grid.Row >
                         <Header as="h1">
-                            Propósito Superior
+                            Misión
                          </Header>
                          </Grid.Row>
                          <Grid.Row>
@@ -43,7 +49,7 @@ const About = (props) => {
                         Somos una organización sin ánimo de lucro que trabaja con agentes del estado, el sector privado, organismos internacionales organizaciones no gubernamentales, la academia y la sociedad civil en proyectos de movilidad sostenible en cinco dimensiones: eficiencia, seguridad vial, protección del medio ambiente, inclusión social y salud pública. 
                         <br/>
                         <Header as="h2">
-                            Valores
+                            Objetivos
                         </Header>
                         <List bulleted>
                             <List.Item>
@@ -102,9 +108,15 @@ const About = (props) => {
                         
                     </Header>
                     <br/>
-                    
-                    <List bulleted>
-                        <List.Item>Seguridad Vial<List.List>
+                    <Modal 
+                        onClose={()=> setOpen(false)}
+                        onOpen={()=> setOpen(true)}
+                        open={open}
+                        trigger={<Button color="orange">Seguridad Vial</Button>}
+                    >
+                        <Modal.Header>Seguridad Vial</Modal.Header>
+                        <Modal.Content>
+                            <List bulleted>
                             <List.Item>
                             Apoyo en la planeación e implantación del Plan de Seguridad Vial y el Programa de Gestión de la Velocidad de Bogotá (2016-2020)
                             </List.Item>
@@ -120,9 +132,18 @@ const About = (props) => {
                             <List.Item>
                             Investigaciones sobre el papel de la movilidad sostenible en la seguridad vial, el diseño seguro de corredores de buses, y el impacto de la gestión de la velocidad y del ambiente construido en los siniestros con víctimas en Bogotá
                             </List.Item>
-                            </List.List>
-                        </List.Item>
-                        <List.Item>Trasnporte Público<List.List>
+                            </List>
+                        </Modal.Content>
+                    </Modal>
+                    <Modal 
+                        onClose={()=> setOpen1(false)}
+                        onOpen={()=> setOpen1(true)}
+                        open={open1}
+                        trigger={<Button color="blue">Trasnporte Público</Button>}
+                    >
+                        <Modal.Header>Trasnporte Público</Modal.Header>
+                        <Modal.Content>
+                            <List bulleted>
                             <List.Item>
                                 Planeación e implantación del sistema de transporte masivo en buses de Bogotá (2000-2003)
                             </List.Item>
@@ -162,10 +183,18 @@ const About = (props) => {
                             <List.Item>
                             Diseño del corredor de la Carrera Séptima Bogotá (para transporte masivo en buses, peatones y bicicletas, 2017)
                             </List.Item>
-                            </List.List>
-                            </List.Item>
-                        <List.Item>Peatones y Bicicletas
-                            <List.List>
+                            </List>
+                        </Modal.Content>
+                    </Modal>
+                    <Modal 
+                        onClose={()=> setOpen2(false)}
+                        onOpen={()=> setOpen2(true)}
+                        open={open2}
+                        trigger={<Button color="green">Peatones y Bicicletas</Button>}
+                    >
+                        <Modal.Header>Peatones y Bicicletas</Modal.Header>
+                        <Modal.Content>
+                            <List bulleted>
                             <List.Item>
                             Apoyo en los estudios de factibilidad para la implantación de la Ciclo-Alameda del Medio Milenio en Bogotá (2018-2019)
                             </List.Item>
@@ -181,23 +210,38 @@ const About = (props) => {
                             <List.Item>
                             Estudio de estructuración técnica, legal, financiera para la formalización de tricimóviles de pedaleo y pedaleo asistido en Bogotá (2019-2020)
                             </List.Item>
-                            </List.List>    
-                        </List.Item>
-                        <List.Item>
-                        Infraestructura de transporte
-                        <List.List>
+                            </List>
+                        </Modal.Content>
+                    </Modal>
+                    <Modal 
+                        onClose={()=> setOpen3(false)}
+                        onOpen={()=> setOpen3(true)}
+                        open={open3}
+                        trigger={<Button color="purple">Infraestructura de transporte</Button>}
+                    >
+                        <Modal.Header>Infraestructura de transporte</Modal.Header>
+                        <Modal.Content>
+                            <List bulleted>
                             <List.Item>
                             Coordinación de la atención a la ola invernal y reconstrucción de la infraestructura de transporte nacional (2010-2012)
                             </List.Item>
                             <List.Item>
                             Diseño del programa de concesiones viales 4G (2010-2018)
                             </List.Item>
-                        </List.List>
-                        </List.Item>
-                        <List.Item>
-                            Otros Proyectos
-                            <List.List>
-                                <List.Item>
+                            </List>
+                        </Modal.Content>
+                    </Modal>
+                    <Modal 
+                        onClose={()=> setOpen4(false)}
+                        onOpen={()=> setOpen4(true)}
+                        open={open4}
+                        trigger={<Button color="yellow">Otros Proyectos</Button>}
+                    >
+                        <Modal.Header>Otros Proyectos</Modal.Header>
+                        <Modal.Content>
+                            <List bulleted>
+                            
+                            <List.Item>
                                 Apoyo al programa de Eco-logística Urbana en Colombia y Argentina de ICLEI (2019)
                                 </List.Item>
                                 <List.Item>
@@ -209,16 +253,26 @@ const About = (props) => {
                                 <List.Item>
                                 Preparación del capítulo sobre trasporte verde de la hoja de ruta para transporte sostenible para todos (SUM4ALL, 2018-2019)
                                 </List.Item>
-                            </List.List>
-                        </List.Item>
-                        <List.Item>
-                        Cursos y capacitaciones
-                        <List.List>
+                            </List>
+                        </Modal.Content>
+                    </Modal>
+                    <Modal 
+                        onClose={()=> setOpen5(false)}
+                        onOpen={()=> setOpen5(true)}
+                        open={open5}
+                        trigger={<Button color="red">Cursos y capacitaciones</Button>}
+                    >
+                        <Modal.Header>Cursos y capacitaciones</Modal.Header>
+                        <Modal.Content>
+                            <List bulleted>
+                            
                             <List.Item>
                             Cursos cortos de formación en movilidad sostenible y transporte público (GIZ – SUTP) Bangkok 2004, Beijing 2005, Querétaro 2006, Ciudad de México 2007, Kuala Lumpur 2016, Cairo 2016, Estambul 2015, Manila 2016, Santiago 2018, Frankfurt 2018, Berlín 2018, 
                             </List.Item>
-                            </List.List>
-                        </List.Item>
+                            </List>
+                        </Modal.Content>
+                    </Modal>
+                    <List bulleted>
                         <List.Item>
                             Enlaces relevantes
                             <List.List>
