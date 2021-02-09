@@ -139,9 +139,9 @@ const About = (props) => {
                         onClose={()=> setOpen1(false)}
                         onOpen={()=> setOpen1(true)}
                         open={open1}
-                        trigger={<Button color="blue">Trasnporte Público</Button>}
+                        trigger={<Button color="blue">Transporte Público</Button>}
                     >
-                        <Modal.Header>Trasnporte Público</Modal.Header>
+                        <Modal.Header>Transporte Público</Modal.Header>
                         <Modal.Content>
                             <List bulleted>
                             <List.Item>
@@ -277,19 +277,19 @@ const About = (props) => {
                             Enlaces relevantes
                             <List.List>
                                 <List.Item>
-                                    <a href="https://carrosmasseguros.org/">Iniciativa Carros Más Seguros</a>
+                                    <a href="https://carrosmasseguros.org/" target="_blank" rel="noopener noreferrer">Iniciativa Carros Más Seguros</a>
                                 </List.Item>
                                 <List.Item>
-                                <a href="https://lasillavacia.com/users/dhidalgo65">Columnas de Opinión La Silla Vacía, Red Cachaca </a>
+                                <a href="https://lasillavacia.com/users/dhidalgo65" target="_blank" rel="noopener noreferrer">Columnas de Opinión La Silla Vacía, Red Cachaca </a>
                                 </List.Item>
                                 <List.Item>
-                                <a href="https://www.eltiempo.com/opinion/columnistas/dario-hidalgo">Columnas de Opinión El Tiempo</a>
+                                <a href="https://www.eltiempo.com/opinion/columnistas/dario-hidalgo" target="_blank" rel="noopener noreferrer">Columnas de Opinión El Tiempo</a>
                                 </List.Item>
                                 <List.Item>
-                                <a href="https://thecityfix.com/blog/author/dario-hidalgo/">Blogs TheCityFix</a>
+                                <a href="https://thecityfix.com/blog/author/dario-hidalgo/" target="_blank" rel="noopener noreferrer" >Blogs TheCityFix</a>
                                 </List.Item>
                                 <List.Item>
-                                <a href="https://scholar.google.es/citations?user=2ITvrmQAAAAJ&hl=en">Publicaciones Google Académico </a>
+                                <a href="https://scholar.google.es/citations?user=2ITvrmQAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Publicaciones Google Académico </a>
                                 </List.Item>
                             </List.List>
                         </List.Item>
