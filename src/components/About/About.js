@@ -108,11 +108,14 @@ const About = (props) => {
                         
                     </Header>
                     <br/>
+                    <Grid>
+                        <Grid.Row centered>
+                        <Grid.Column computer={5} mobile={8}>
                     <Modal 
                         onClose={()=> setOpen(false)}
                         onOpen={()=> setOpen(true)}
                         open={open}
-                        trigger={<Button color="orange">Seguridad Vial</Button>}
+                        trigger={<Button fluid color="orange">Seguridad Vial</Button>}
                     >
                         <Modal.Header>Seguridad Vial</Modal.Header>
                         <Modal.Content>
@@ -135,11 +138,13 @@ const About = (props) => {
                             </List>
                         </Modal.Content>
                     </Modal>
+                    </Grid.Column>
+                    <Grid.Column computer={5} mobile={8}>
                     <Modal 
                         onClose={()=> setOpen1(false)}
                         onOpen={()=> setOpen1(true)}
                         open={open1}
-                        trigger={<Button color="blue">Transporte Público</Button>}
+                        trigger={<Button fluid color="blue">Transporte Público</Button>}
                     >
                         <Modal.Header>Transporte Público</Modal.Header>
                         <Modal.Content>
@@ -186,11 +191,13 @@ const About = (props) => {
                             </List>
                         </Modal.Content>
                     </Modal>
+                    </Grid.Column>
+                    <Grid.Column computer={5} mobile={8}>
                     <Modal 
                         onClose={()=> setOpen2(false)}
                         onOpen={()=> setOpen2(true)}
                         open={open2}
-                        trigger={<Button color="green">Peatones y Bicicletas</Button>}
+                        trigger={<Button fluid color="green">Peatones y Bicicletas</Button>}
                     >
                         <Modal.Header>Peatones y Bicicletas</Modal.Header>
                         <Modal.Content>
@@ -213,11 +220,13 @@ const About = (props) => {
                             </List>
                         </Modal.Content>
                     </Modal>
+                    </Grid.Column>
+                    <Grid.Column computer={5} mobile={8}>
                     <Modal 
                         onClose={()=> setOpen3(false)}
                         onOpen={()=> setOpen3(true)}
                         open={open3}
-                        trigger={<Button color="purple">Infraestructura de transporte</Button>}
+                        trigger={<Button fluid color="purple">Infraestructura de transporte</Button>}
                     >
                         <Modal.Header>Infraestructura de transporte</Modal.Header>
                         <Modal.Content>
@@ -231,11 +240,13 @@ const About = (props) => {
                             </List>
                         </Modal.Content>
                     </Modal>
+                    </Grid.Column>
+                    <Grid.Column computer={5} mobile={8}>
                     <Modal 
                         onClose={()=> setOpen4(false)}
                         onOpen={()=> setOpen4(true)}
                         open={open4}
-                        trigger={<Button color="yellow">Otros Proyectos</Button>}
+                        trigger={<Button fluid color="yellow">Otros Proyectos</Button>}
                     >
                         <Modal.Header>Otros Proyectos</Modal.Header>
                         <Modal.Content>
@@ -256,11 +267,13 @@ const About = (props) => {
                             </List>
                         </Modal.Content>
                     </Modal>
+                    </Grid.Column>
+                    <Grid.Column computer={5} mobile={8}>
                     <Modal 
                         onClose={()=> setOpen5(false)}
                         onOpen={()=> setOpen5(true)}
                         open={open5}
-                        trigger={<Button color="red">Cursos y capacitaciones</Button>}
+                        trigger={<Button fluid color="black">Cursos y capacitaciones</Button>}
                     >
                         <Modal.Header>Cursos y capacitaciones</Modal.Header>
                         <Modal.Content>
@@ -272,6 +285,9 @@ const About = (props) => {
                             </List>
                         </Modal.Content>
                     </Modal>
+                    </Grid.Column>
+                    </Grid.Row>
+                    </Grid>
                     <List bulleted>
                         <List.Item>
                             Enlaces relevantes

@@ -18,6 +18,7 @@
 }
 .app-left-nav {
   display: flex;
+  font-size: x-large;
 }
 .app-title {
   font-size: 32px;
